@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h3 id="no-artists"></h3>
+        <div id="artist">
+            
+        </div>
+
+        <div id="artists-mbid" hidden>
+            {% for artist in artist_tags %}
+            <li>{{artist}}</li>
+            {% endfor %}
+        </div>
+
+        <script src="{{url_for('static', filename='recommended.js')}}"></script>
+        
+{% endblock %}

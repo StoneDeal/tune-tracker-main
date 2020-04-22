@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div id="search-artists">
+                <form id="search" action="/artist">
+                        <input name="tag" type="text" placeholder="Search for an artist" />
+                        <input id="button" type="submit" value="Find Artist" class="btn" />
+                </form>
+        </div>
+
+        <div id="popular-artists" >
+        </div>
+
+        <script src="{{url_for('static', filename='tune-tracker.js')}}"></script>
+        <!--<script src="scripts/tune-tracker.js"></script>
+        -->
+{% endblock %}

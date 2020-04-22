@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2><span id="pgheader">Register New Account</span></h2>
+<form action="/signup" method="post" name="submit-button">
+  <table id="table">
+    <tr>
+    <td>
+    </td>
+    <td>
+    <input type="text" name="username" placeholder="Username" value="{{ username }}"/>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    <input type="password" name="password" placeholder="Password"/>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    <input type="password" name="verify" placeholder="Verify Password"/>
+    </td>
+    </tr>
+  </table>
+  <input type="submit" value="Register" name="signup-submit" class="btn"/>
+</form>
+<p class="error">{{ username_error }}</p>
+<p class="error">{{ password_error }}</p>
+<p class="error">{{ password_match_error }}</p>
+<!-- <script src="{{url_for('static', filename='signup.js')}}"></script> -->
+
+{% endblock %}

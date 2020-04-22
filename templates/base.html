@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tune Tracker</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+        integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
+    </head>
+
+    <body>
+
+        <div id="login-bar" style='float: right'>
+            {% if 'user' in session %}
+            <form action="/logout" method="post" id='logout'>
+                <input type="submit" value="Log Out" class="btn"/>
+            </form>
+            {% else %}
+            <a id="nav" href="/login">Login</a><span style="color: white"> | </span><a id="nav" href="/signup">Register</a>
+            {% endif %}
+        </div>
+
+
+        <div class="jumbotron" id="page-header">
+
+
+            <h1>Tune Tracker</h1>
+
+            <div class="container" id="navbar">
+                <a id="toolbar" href="/home">Home</a>
+                <a id="toolbar" href="/recommended">Recommended</a>
+                <a id="toolbar" href="/profile">Profile</a>
+            </div>
+
+        </div>
+
+            {% block content %}
+            {% endblock %}
+
+            <footer>&copy; Stone Deal 2020</footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+
+
+body {
+    text-align: center;
+    color: white;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (min-width: 621px) {
+    #toolbar {
+        padding-top: 5%;
+        padding-right: 10%;
+        padding-left: 10%;
+        color: white;
+    }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 620px) {
+    #toolbar {
+        padding-top: 5%;
+        padding-right: 1%;
+        padding-left: 1%;
+        color: white;
+    }
+}
+
+#page-header {
+    background-color: #660033;
+    text-align: center;
+    color: white;
+
+}
+
+#navbar {
+    width: 100%;
+}
+
+
+
+.tag {
+    color: white;
+}
+
+.error {
+    color: red;
+}
+
+#table {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    color: white;
+    background-color: #660033;
+}
+
+#artist-name {
+    color: white;
+}
+
+#nav {
+    color: white;
+}
+
+a {
+
+    border-radius: 5px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+#pgheader {
+    background-color: #660033;
+    border-radius: 3px;
+}
+
+h1 {
+    color: white;
+}
+
+img {
+    border-radius: 50px;
+}
+
+#search {
+    padding: 2%;
+}
+
+#popular-artists {
+    width: 100%;
+    text-align: center;
+
+}
+
+.home-img {
+    height: 174px;
+    width: 174px;
+}
+
+.artist-img {
+    height: 300px;
+    width: 300px;
+}
+
+body {
+    background-image: url("media/cassettes (3).jpg");
+
+
+    background-repeat: repeat;
+    background-position: center;
+    /*
+     height: 100%;
+     background-size: cover;
+    background-color: #e3e305;
+
+    */
+}
+footer {
+ position:fixed;
+ bottom:0;
+ left:0;
+}
